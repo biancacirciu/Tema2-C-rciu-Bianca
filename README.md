@@ -23,3 +23,4 @@ Această aplicație web este un "Grimoriu Digital" care permite utilizatorilor s
 
 ---
 *Proiect realizat pentru Tema 2 - ESC.*
+Proiect verificat
