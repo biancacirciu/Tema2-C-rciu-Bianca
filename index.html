@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Random Spells</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="spell-container">
+        
+        <h1>Harry Potter Spells</h1>
+        <p class="subtitle">Descoperă magia de la Hogwarts</p>
+        <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/2180px-Harry_Potter_wordmark.svg.png" 
+            alt="Harry Potter Logo" 
+            class="hogwarts-crest"
+        >
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Incantație</th>
+                    <th>Tip</th>
+                </tr>
+            </thead>
+            <tbody id="spell-table-body">
+                <tr>
+                    <td colspan="3" style="color: #777; font-style: italic;">
+                        Așteptând bagheta magică...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="cast-spell-btn">Cast Spell ✨</button>
+
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

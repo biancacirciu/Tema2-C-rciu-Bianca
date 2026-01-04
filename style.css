@@ -1,0 +1,121 @@
+/* --- Resetare și Setări Generale --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Fundal mistic: degrade de la violet închis spre negru */
+    background: radial-gradient(circle at center, #2e1a47, #0d0612);
+    font-family: 'Georgia', 'Times New Roman', serif; /* Font cu serife pentru aspect vechi */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0d6ff; /* Text alb-liliachiu deschis */
+}
+
+/* --- Containerul Principal (Cartea de Vrăji) --- */
+.spell-container {
+    background-color: rgba(20, 10, 30, 0.85); /* Semitransparent */
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #d4af37; /* Contur Auriu */
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2), /* Strălucire aurie difuză */
+                0 10px 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(5px); /* Efect de sticlă mată */
+}
+
+/* --- Imaginea (Stema) --- */
+.hogwarts-crest {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px auto; /* Centrare orizontală */
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3)); /* Aură magică */
+    transition: transform 0.3s ease;
+}
+
+.hogwarts-crest:hover {
+    transform: scale(1.1); /* Se mărește ușor când pui mouse-ul */
+}
+
+/* --- Titluri și Text --- */
+h1 {
+    color: #d4af37; /* Auriu metalic */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.subtitle {
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+/* --- Tabelul (Pergamentul Vechi) --- */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 30px;
+    background-color: #f5e6c8; /* Culoare de pergament/hârtie veche */
+    border-radius: 8px;
+    overflow: hidden;
+    color: #3e2723; /* Text maro închis (ca cerneala veche) */
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.1); /* Umbră interioară pentru efect de hârtie */
+}
+
+th {
+    background-color: #4a3b2a; /* Maro închis pentru antet */
+    color: #d4af37; /* Text auriu */
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #d4af37;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #d7c6a5;
+    font-family: 'Courier New', monospace; /* Font tip mașină de scris/scris de mână */
+    font-weight: bold;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* --- Butonul Magic --- */
+button {
+    background: linear-gradient(45deg, #d4af37, #f9d976); /* Degrade auriu */
+    color: #2e1a47; /* Text închis la culoare pentru contrast */
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    border-radius: 50px; /* Buton rotund la capete */
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: translateY(-3px); /* Se ridică */
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6); /* Strălucește mai tare */
+    background: linear-gradient(45deg, #f9d976, #d4af37);
+}
+
+button:active {
+    transform: translateY(1px);
+}
